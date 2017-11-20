@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>GifTastic</title>
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Giftastic</title>
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo">GIFTASTIC</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 l9">
+                    <div id=buttonsDiv></div>
+                </div>
+                <form class="col s12 m4 l3">
+                    <input placeholder="ADD YOUR GIF" id="search-input" type="text" class="validate">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" id="addGif">Submit
+                        <i class="material-icons right">add_circle_outline</i>
+                    </button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div id="results"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            © 2017 Copyright Text
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
